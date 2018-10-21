@@ -78,7 +78,7 @@ def porosity_to_density(phi, rho_matrix, rho_fluid):
     Returns:
         Estimate of bulk density, rho.
     """
-    return rho_matrix * (1 - phi) + rho_fluid * phi_rhob
+    return rho_matrix * (1 - phi) + rho_fluid * phi
 
 
 def density_to_porosity(rho, rho_matrix, rho_fluid):
